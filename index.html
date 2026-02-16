@@ -232,7 +232,7 @@
         <button class="btn primary" id="btnRetry">Reintentar</button>
       </div>
 
-      <p class="tip">Si te preguntan “¿qué significa el título?”: es el choque entre orgullo/honor y proteger el futuro del grupo.</p>
+      <p class="tip">Tip: si quieres, vuelve a jugar para mejorar tu puntaje.</p>
     </div>
   </div>
 
@@ -240,40 +240,40 @@
     // 6 afirmaciones (cortas) + respuesta + feedback corto
     const questions = [
       {
-        text: "En política, a veces importa más salvar al pueblo que verse héroe.",
-        answer: true,
-        ok: "El bien común puede pesar más que el heroísmo individual.",
-        no: "El capítulo insiste en priorizar la supervivencia colectiva."
-      },
-      {
-        text: "La humillación siempre destruye la dignidad, sin excepción.",
+        text: "Después de las Horcas Caudinas, Roma ya no tuvo opción: solo podía morir luchando.",
         answer: false,
-        ok: "Puede doler, pero no necesariamente anula el futuro del colectivo.",
-        no: "El texto dice que se puede preservar el futuro común."
+        ok: "El capítulo muestra que, aunque dolía, todavía había opciones políticas.",
+        no: "Sí había alternativas: sobrevivir y replantear el honor, aunque fuera vergonzoso."
       },
       {
-        text: "Una promesa personal y un tratado del pueblo son jurídicamente iguales.",
-        answer: false,
-        ok: "Se parecen moralmente, pero jurídicamente no son lo mismo.",
-        no: "El capítulo distingue promesa (personal) vs tratado (institucional)."
-      },
-      {
-        text: "Reconstruir legitimidad puede apoyarse en el derecho, no solo en revancha.",
+        text: "El capítulo sugiere que la paz no debe aceptarse “a cualquier precio” si implica humillación.",
         answer: true,
-        ok: "El derecho puede servir como base para reordenar la acción política.",
-        no: "El cierre habla del derecho como base, no solo venganza."
+        ok: "Se critica la idea de lograr paz por cualquier medio cuando es degradante.",
+        no: "El texto advierte que una paz humillante no se justifica solo por evitar la guerra."
       },
       {
-        text: "Disfrazar venganza con “justicia” es una crítica presente en el texto.",
+        text: "No es lo mismo una promesa hecha por un líder que un tratado aprobado por el pueblo.",
         answer: true,
-        ok: "Advierte sobre la apariencia de derecho para cubrir intereses.",
-        no: "El capítulo critica la venganza disfrazada de justicia."
+        ok: "Se distingue promesa personal vs tratado que obliga a la comunidad.",
+        no: "El capítulo separa promesa (persona) y tratado (pueblo): no obligan igual."
       },
       {
-        text: "La estrategia política nunca puede servir al bien común.",
+        text: "El texto critica cuando la venganza se presenta como si fuera justicia.",
+        answer: true,
+        ok: "Advierte sobre la “apariencia de derecho” para cubrir la venganza.",
+        no: "Sí hay crítica: se señala la venganza disfrazada de justicia."
+      },
+      {
+        text: "Reconstruir el honor puede apoyarse en el derecho, no solo en revancha u orgullo.",
+        answer: true,
+        ok: "La salida es ordenar la acción política con normas, no con pura furia.",
+        no: "La idea final es usar el derecho para recuperar dignidad, no solo vengarse."
+      },
+      {
+        text: "Según el capítulo, la humillación se borra por completo con el tiempo y la victoria.",
         answer: false,
-        ok: "El texto acepta estrategia, aunque sea incómoda, si protege al grupo.",
-        no: "Se muestra que la política mezcla razón, derecho y estrategia."
+        ok: "Se presenta como una “mancha” difícil de borrar, aunque se pueda seguir adelante.",
+        no: "No se borra del todo: queda como marca, aunque Roma recupere libertad de acción."
       }
     ];
 
@@ -377,8 +377,8 @@
       finalScore.textContent = score;
 
       let msg = "";
-      if(score <= 2) msg = "Tip: repasa promesa vs tratado y el choque entre honor y bien común.";
-      else if(score <= 4) msg = "Vas bien: ya captaste la tensión moral vs política.";
+      if(score <= 2) msg = "Tip: repasa promesa vs tratado y la tensión entre dignidad y decisión política.";
+      else if(score <= 4) msg = "Vas bien: ya captaste el choque entre moral y política.";
       else msg = "Excelente: entendiste cómo se piensa el bien común en decisiones difíciles.";
       finalMsg.textContent = msg;
 
@@ -415,4 +415,3 @@
   </script>
 </body>
 </html>
- 
